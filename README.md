@@ -148,18 +148,5 @@ Security note: Do not commit API keys to source control. In production you shoul
 
 ---
 
-## Next improvements (nice to have)
 
-- Add server-side validation with `express-validator` or `Joi` and map errors back to frontend fields.
-- Implement unit/integration tests for the API (Jest + Supertest) and frontend (React Testing Library).
-- Proxy GenAI calls through the backend and add rate-limiting and caching.
-- Improve UX: show loading states, success/error toasts consistently, and add input masks for phone numbers.
 
----
-
-If you'd like, I can:
-- Add `fetchUser()` invocation on app mount so the client store is synced with the backend cookie automatically;
-- Create a `README` section with sample curl/postman requests for each API endpoint;
-- Add a Vite proxy so you can call `/api/*` without CORS during development.
-
-Tell me which follow-up you'd like and I will implement it next.
