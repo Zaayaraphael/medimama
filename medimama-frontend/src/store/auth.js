@@ -6,7 +6,7 @@ import axios from "axios"
 axios.defaults.withCredentials = true;
 
 // reuse api
-const API_URL = "http://localhost:5000/api"
+const API_URL = "https://medimama.onrender.com/api"
 
 export const useAuthStore = create((set) => ({
     //initial state
