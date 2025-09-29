@@ -13,14 +13,16 @@ It’s a **full-stack app** built with React (Vite) + Express + MongoDB, featuri
 
 ## 📸 Screenshots
 
-### 🔐 Dashboard
-![Login Screenshot](MEDIMAMA/medimama-frontend/assets/dashboard.png)
 
-### 📊 AI Chatbox
-![Dashboard Screenshot](MEDIMAMA/medimama-frontend/assets/chatbox.png)
+### 📊 Dashboard
+![Dashboard Screenshot](medimama-frontend/assets/dashboard.png)
 
-### 🤖 MediMama Community
-![Chatbot Screenshot](MEDIMAMA/medimama-frontend/assets/community.png)
+### 🤖 AI Chatbot
+![Chatbot Screenshot](medimama-frontend/assets/chatbox.png)
+
+### 👩‍👩‍👦 MediMama Community
+![Community Screenshot](medimama-frontend/assets/community.png)
+
 
 
 
