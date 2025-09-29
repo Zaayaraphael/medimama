@@ -66,13 +66,24 @@ const AboutSection = () => {
 
       {/* Mission & Vision */}
       <section className="py-16 bg-green-50 rounded-lg text-center">
-        <h2 className="text-3xl font-bold text-green-700 mb-6">Our Mission & Vision</h2>
+        <h2 className="text-3xl font-bold text-green-700 mb-6">Our Mission</h2>
         <p className="max-w-3xl mx-auto text-gray-700 mb-4">
-          Our mission is to make healthcare accessible, affordable, and AI-driven for mothers, children, and families everywhere.
+         Medimama’s mission is to save lives by providing pregnant mothers with smart,
+          affordable, and AI-powered
+          healthcare—ensuring every mother 
+          and baby has access to the care they deserve, anytime, anywhere
         </p>
-        <p className="max-w-3xl mx-auto text-gray-700">
-          Our vision is a world where no mother or child is left without medical care, no matter where they live.
+
+      </section>
+
+      <section className="py-16 bg-green-50 rounded-lg text-center">
+        <h2 className="text-3xl font-bold text-green-700 mb-6">Our Vision</h2>
+        <p className="max-w-3xl mx-auto text-gray-700 mb-4">
+         Medimama envisions a world where every mother and child, everywhere, 
+         has effortless access to life-saving healthcare—making pregnancy 
+         and childhood safe, supported, and healthy for all
         </p>
+
       </section>
     </div>
   )

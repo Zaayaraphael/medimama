@@ -3,7 +3,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 
 
-;
+
 
 import connectToDB from './config/db.js';
 
@@ -25,7 +25,7 @@ app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
-    res.send('Hello world');
+    res.send('Hello world1111');
 });
 
 // Sign up

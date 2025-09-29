@@ -188,14 +188,14 @@ const Signup = () => {
         {/* Nationality */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Nationality <span className="text-red-500">*</span>
+           Country <span className="text-red-500">*</span>
           </label>
           <select
             name="nationality"
             onChange={handleChange}
             className="w-full p-3 border rounded-lg"
           >
-            <option value="">Select Nationality</option>
+            <option value="">Select Country</option>
             {countries.map((country, idx) => (
               <option key={idx} value={country.label}>
                 {country.label}
@@ -252,12 +252,12 @@ const Signup = () => {
         {/* City */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            City 
+            Residence Address 
           </label>
           <input
             type="text"
             name="city"
-            placeholder="City"
+            placeholder="Enter your Address"
             onChange={handleChange}
             className="w-full p-3 border rounded-lg"
           />

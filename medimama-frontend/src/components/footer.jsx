@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-xl">
           <ul className="flex flex-col space-y-2 
             ">
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">FAQ</li>
+            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">About Us</li>
             <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">How to use Medimama</li>
             <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">Privacy protection</li>
           </ul>
