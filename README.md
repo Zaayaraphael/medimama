@@ -1,6 +1,28 @@
 # MediMama
 
-MediMama is a small full-stack medical assistant app built with React (Vite) frontend and an Express + MongoDB backend. It includes user authentication, a symptom checker and AI-powered features using Google Generative AI (Gemini). This README explains how to set up, run, and test the app locally.
+MediMama is an AI-powered medical assistant for mothers, children, and families.  
+It’s a **full-stack app** built with React (Vite) + Express + MongoDB, featuring:
+- Secure authentication with JWT & cookies
+- AI symptom checker and chatbot using Google Gemini
+- Pharmacy and healthcare tools
+
+## Live Demo
+👉 [Frontend on Netlify](https://medimama.netlify.app)  
+👉 [Backend API on Render](https://your-backend.onrender.com)
+
+
+## 📸 Screenshots
+
+### 🔐 Dashboard
+![Login Screenshot](assets/dashboard.png)
+
+### 📊 AI Chatbox
+![Dashboard Screenshot](assets/chatbox.png)
+
+### 🤖 MediMama Community
+![Chatbot Screenshot](assets/community.png)
+
+
 
 ---
 
@@ -31,7 +53,7 @@ Prerequisites:
 1. Clone the repo
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Zaayaraphael/medimama
 cd Medimama
 ```
 
@@ -147,6 +169,43 @@ Security note: Do not commit API keys to source control. In production you shoul
   - For production, proxy AI requests from backend to avoid exposing keys client-side.
 
 ---
+
+⚠️ Disclaimer
+
+All data used in MediMama (including doctor names, phone numbers, and character details) are mock data only and not real.
+They are placeholders to demonstrate app functionality.
+
+As MediMama grows, we plan to integrate with real medical data sources and allow verified doctors to register on the platform. Until then, please note that no real healthcare professionals or contacts are represented in this project.
+
+
+---
+
+## Deployment
+
+- **Backend (Render)**: 
+  - Add env vars in Render dashboard (`MONGODB_URI`, `JWT_SECRET`, `CLIENT_URL` etc.).
+  - Make sure `CLIENT_URL` includes both `http://localhost:5173` (dev) and `https://your-app.netlify.app` (prod).
+
+- **Frontend (Netlify)**: 
+  - Add `VITE_API_URL=https://your-backend.onrender.com` and `VITE_GOOGLE_GENAI_API_KEY` in Netlify Site settings → Environment Variables.
+  - Build command: `npm run build`
+  - Publish directory: `dist`
+
+
+---
+
+  ## 💡 Feedback & Suggestions
+
+MediMama is still growing, and I’d love to hear your thoughts!  
+If you have ideas, find a bug, or want to suggest improvements:
+
+- Open an [issue](https://github.com/Zaayaraphael/medimama/issues)
+- Start a [discussion](https://github.com/Zaayaraphael/medimama/discussions)
+- Or reach out directly: [raphaelzaaya1@gmail.com](mailto:raphaelzaaya1@gmail.com)
+
+Your feedback will help make MediMama better for mothers, children, and families everywhere ❤️
+
+
 
 
 
