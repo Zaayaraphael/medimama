@@ -37,7 +37,7 @@ const PORT = process.env.PORT || 5000;
 
 // Test route
 app.get("/", (req, res) => {
-  res.send("Hello world1111");
+  res.send("Hello world");
 });
 
 // ================== AUTH ROUTES ==================
@@ -149,5 +149,5 @@ app.post("/api/logout", async (req, res) => {
 
 app.listen(PORT, async () => {
   await connectToDB();
-  console.log(`✅ Server running on http://localhost:${PORT}`);
+  console.log(` Server running on http://localhost:${PORT}`);
 });

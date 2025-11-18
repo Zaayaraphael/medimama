@@ -1,61 +1,116 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import Logo from "../assets/Logo.svg";
+import React from "react";
 
-const Footer = () => {
+import email from "../assets/icons/SVG (email).svg";
+import phone from "../assets/icons/SVG (phone).svg";
+import facebookIcon from "../assets/icons/Link - Facebook.svg";
+import instagramIcon from "../assets/icons/Link - Instagram.svg";
+import twitterIcon from "../assets/icons/Link - Twitter.svg";
+import linkedinIcon from "../assets/icons/Link - LinkedIn.svg";
+
+const footer = () => {
+  const text = [
+    {
+      id: 1,
+      contents:
+        "Building trust, one harvest at a time. Connecting Nigerian farmers with buyers who value quality and fairness.",
+    },
+  ];
+
+  const navBar = ["Home", "Features", "How it works", "Stories", "FAQs"];
+
+  const contact = [
+    {
+      icon: email,
+      text: "hello@medimama.com",
+      link: "mailto:hello@medimama.com",
+    },
+    {
+      icon: phone,
+      text: "+234 8107016650",
+      link: "tel:+2348107016650",
+    },
+  ];
+
+  const social = [
+    { icon: facebookIcon, text: "Facebook", link: "https://facebook.com" },
+    { icon: twitterIcon, text: "Twitter", link: "https://x.com" },
+    { icon: instagramIcon, text: "Instagram", link: "https://instagram.com" },
+    { icon: linkedinIcon, text: "Linkedin", link: "https://linkedin.com" },
+  ];
+
   return (
-    <footer className="bg-gray-400 text-[#737373]  px-2 py-8 mt-16">
-      <div className="max-w-5xl mx-auto flex flex-col items-center text-center space-y-8">
-        {/* Links section */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-xl">
-          <ul className="flex flex-col space-y-2 
-            ">
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">About Us</li>
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">How to use Medimama</li>
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">Privacy protection</li>
-          </ul>
+    <footer className="w-full bg-[#1A1A1A] text-gray-500 px-6 md:px-12 lg:px-20 py-20">
+      <section className="max-w-[1152px] w-full mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between gap-12">
+         
 
-          <ul className="flex flex-col space-y-2 ">
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">Help Center</li>
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">Jobs</li>
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">Cookie Preferences</li>
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">Legal Notices</li>
-          </ul>
+          {/* Quick Links */}
+          <div className="min-w-[150px]">
+            <h4 className="text-white mb-6 font-semibold text-lg">
+              Quick Links
+            </h4>
+            {navBar.map((item, index) => (
+              <a
+                key={index}
+                href="#"
+                className="block hover:text-green-500 font-normal text-base leading-[28px] transition mb-3"
+              >
+                {item}
+              </a>
+            ))}
+          </div>
 
-          <ul className="flex flex-col space-y-2 
-            ">
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">Media Center</li>
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">Terms of Use</li>
-            <li className="hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer ">Contact Us</li>
-          </ul>
+          {/* Contacts */}
+          <div>
+            <h4 className="text-white mb-6 font-semibold text-lg">
+              Get In Touch
+            </h4>
+            {contact.map((contacts, index) => (
+              <article
+                key={index}
+                className="flex items-center gap-3 inter text-base font-normal leading-[24px] mb-4"
+              >
+                <img src={contacts.icon} alt={contacts.text} />
+                <a href={contacts.link}> {contacts.text} </a>
+              </article>
+            ))}
+          </div>
+
+          {/* Socials */}
+          <div>
+            <h4 className="text-white mb-6 font-semibold text-lg">
+              Connect With Us
+            </h4>
+            <div className="flex flex-wrap gap-3">
+              {social.map((socials, index) => (
+                <a
+                  key={index}
+                  href={socials.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={socials.icon}
+                    alt={socials.text}
+                    className="w-6 h-6 hover:opacity-80"
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
-        {/* Social icons */}
-        <div className="flex  gap-6 ">
-          <h2 className=" text-3xl text-white ">Follow us!</h2>
-          
-          <a href="https://facebook.com/ZaayaRexisTer" target="_blank" rel="noreferrer">
-            <FaFacebook size={24} />
-          </a>
-          <a href="https://twitter.com/zaayaraphael" target="_blank" rel="noreferrer">
-            <FaTwitter size={24} />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
-            <FaInstagram size={24} />
-          </a>
-          <a href="https://linkedin.com/in/zaaya-raphael" target="_blank" rel="noreferrer">
-            <FaLinkedin size={24} />
-          </a>
-        </div>
-
-        {/* Copyright */}
-        <div>
-          <p>
-            &copy; {new Date().getFullYear()} Raphael Zaaya. All rights reserved.
+        {/* Bottom Footer */}
+        <div className="text-center border-t border-gray-600 pt-8 mt-16 inter font-normal text-sm">
+          <p className="mb-3">
+            By using Medimama, you agree to our Terms of Service and Privacy
+            Policy.
           </p>
+          <p>&copy; 2025 Medimama. All rights reserved.</p>
         </div>
-      </div>
+      </section>
     </footer>
   );
 };
 
-export default Footer;
+export default footer;
